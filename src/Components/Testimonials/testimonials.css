@@ -1,0 +1,31 @@
+.testimonials-container{
+    padding: 5rem;
+}
+.testimonials-container h1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.testimonials-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.testimonial-card{
+    width: 300px;
+    min-height: 300px;
+    border: 5px solid rgb(52, 8, 134);
+    box-shadow: 5px 5px 5px 3px rgb(52, 8, 134);
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.testimonial-card h4, p{
+    padding: 0.5rem;
+}

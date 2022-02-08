@@ -1,0 +1,48 @@
+.topbar{
+    background-color: crimson;
+    padding: 1rem;
+}
+
+.topbar-left span h1{
+    color: white;
+    margin-left: 3rem;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.topbar-right{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.topbar-right span ul li{
+    color: white;
+    list-style: none;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.topbar-right span ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+.topbar-right span ul li:hover{
+    transform: scale(1.1);
+}
+
+.topbar-right span ul li a:hover{
+    color: white;
+    border-radius: 2.5px;
+    background-color: rgb(52, 8, 134);
+}
+
+@media screen and (max-width: 992px) {
+    .topbar-right span ul li{
+        margin-left: 0;
+        padding: 0;
+    }
+  }

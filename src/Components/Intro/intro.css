@@ -1,0 +1,120 @@
+.row{
+    --bs-gutter-x:0;
+}
+
+.intro-all{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 10rem;
+    /* background-image: url('../../../public/assets/bg3.jpg'); */
+}
+
+.intro-left{
+    padding-top: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    /* background-color: crimson;
+    border-radius: 30%;
+    max-height: 620px; */
+}
+.intro-left-content img{
+    max-width: 300px;
+    max-height: 500px;
+    border-radius: 2.5rem;
+    box-shadow: 10px 10px 10px 3px rgb(52, 8, 134);
+    margin-left: 25px;
+}
+
+.contact-icons{
+    font-size: 50px;
+    margin-top: 3rem;
+    margin-left: 3.2rem;
+    color: rgb(52, 8, 134);
+    transition: all 0.5s ease;
+}
+.contact-icons:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btn-style{
+    margin-top: 2rem;
+    margin-left: 0.7rem;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(52, 8, 134);
+    transition: all 0.5s ease;
+}
+
+.btn-style:hover{
+    background-color: crimson;
+    color: white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.intro-right-content h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+.intro-right-content h3 span{
+    color: crimson;
+    font-size: 40px;
+    font-weight: 600;
+}
+.intro-right{
+    padding-top: 2rem;
+    max-width: 800px;
+}
+
+.card-header{
+    color: rgb(52, 8, 134);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card ul li{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.5s infinite;
+    -moz-animation: blink 0.5s infinite;
+    animation: blink 0.5s infinite;
+    animation-direction: alternate;
+}
+ 
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .intro-all{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        margin-left: 0rem;
+        /* background-image: url('../../../public/assets/bg3.jpg'); */
+    }
+  }
