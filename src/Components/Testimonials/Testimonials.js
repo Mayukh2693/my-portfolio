@@ -28,7 +28,8 @@ const Testimonials = () => {
                             - Lead QA Engineer, ThoughtTrace
                         </h6>
                         <p>
-                            Mayukh is great to work with, Good with QA stuff
+                            Mayukh is great to work with, Good 
+                            with QA stuff
                         </p>
                     </div>
                 </div>

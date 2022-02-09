@@ -18,10 +18,8 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        alert("Saved" + userForm);
         emailjs.send("service_jrgs3x5", "template_58bvo85", userForm, "user_pGug3749WSUW3GYNzql89")
         .then(response => {
-            console.log("Success!" , response);
             setUserForm({
                 email: '',
                 name:'',

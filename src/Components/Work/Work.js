@@ -22,12 +22,13 @@ const Work = () => {
                             work.map((elem) => {
                                 return (
                                     <>
-                                        <div className='col-12 col-lg-12'>
+                                        <div className='col-12 col-lg-12' key={elem.company}>
                                             <div className="jumbotron work-card-body">
                                                 <h1 className="display-4 card-title">{elem.company}</h1>
                                                 <p className="lead card-duration">{elem.duration}</p>
                                                 <hr className="my-4" />
                                                 <p className='card-text'>{elem.description}</p>
+                                                <p className='skills'>{elem.skills}</p>
                                             </div>
                                         </div>
                                     </>

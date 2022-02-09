@@ -27,9 +27,9 @@ const Intro = () => {
                             <div className='intro-left-content'>
                                 <img src='assets/profile-pic.jpg' alt='profile-pic'></img>
                                 <div className='d-flex'>
-                                    <SiLinkedin className='contact-icons' href='www.linkedin.com' target='_blank'/>
-                                    <SiFacebook className='contact-icons' />
-                                    <SiGithub className='contact-icons' />
+                                    <a href='https://www.linkedin.com/in/mayukh-nath-982b9b57/' target='_blank'><SiLinkedin className='contact-icons' /></a>
+                                    <a href='' target='_blank'><SiFacebook className='contact-icons' /></a>
+                                    <a href='https://github.com/Mayukh2693' target='_blank'><SiGithub className='contact-icons' /></a>
                                 </div>
                                 <a href='#Contact'> <button className='btn btn-style'>Contact Me</button></a>
                                 <a href='assets/resume-2022.pdf' download><button className='btn btn-style'>Download Resume</button></a>
@@ -46,20 +46,19 @@ const Intro = () => {
                                 <div className='row'>
                                     {
                                         intro.map((elem) => {
-                                            console.log(elem);
                                             return (
                                                 <>
-                                                    <div className='col-6 col-lg-4 card-body'>
+                                                    <div className='col-6 col-lg-4 card-body' key={elem.header}>
                                                         <div className="card">
                                                             <div className="card-header">
                                                                 {elem.header}
                                                             </div>
                                                             <ul className="list-group list-group-flush">
                                                                 {
-                                                                    elem.tech.map((tectElem) => {
+                                                                    elem.tech.map((techElem) => {
                                                                         return (
                                                                             <>
-                                                                                <li className="list-group-item">{tectElem}</li>
+                                                                                <li className="list-group-item" key={elem.tech}>{techElem}</li>
                                                                             </>
                                                                         )
                                                                     })
