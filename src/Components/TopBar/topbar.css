@@ -5,7 +5,6 @@
 
 .topbar-left span h1{
     color: white;
-    margin-left: 3rem;
     font-size: 40px;
     font-weight: 800;
 }
@@ -39,10 +38,56 @@
     border-radius: 2.5px;
     background-color: rgb(52, 8, 134);
 }
+.hamburger-menu{
+    display: none;
+}
 
 @media screen and (max-width: 992px) {
     .topbar-right span ul li{
         margin-left: 0;
         padding: 0;
+    }
+    .topbar-right{
+        display: flex;
+        align-content: flex-end;
+        justify-content: flex-end;
+    }
+    .topbar-right span{
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -2.8rem;
+        font-size: 2rem;
+        color: white;
+        padding-right: 0.5rem;
+    }
+    .topbar-right-small span{
+        display: flex;
+        flex-direction: column;
+    }
+    .topbar-right-small ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .topbar-right-small span ul li{
+        color: white;
+        list-style: none;
+        width: 100%;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    .topbar-right-small span ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 0.5rem;
+    }
+    .topbar-right-small span ul li a:hover{
+        color: white;
+        border-radius: 2.5px;
+        background-color: rgb(52, 8, 134);
     }
   }

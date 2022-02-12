@@ -74,8 +74,9 @@
 
 .card-header{
     color: rgb(52, 8, 134);
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
+    word-wrap: normal;
 }
 
 .card ul li{
@@ -116,5 +117,13 @@
         margin-bottom: 0rem;
         margin-left: 0rem;
         /* background-image: url('../../../public/assets/bg3.jpg'); */
+    }
+    .intro-right-content{
+        margin-left: 1rem;
+    }
+    .intro-right-content h3 span{
+        color: crimson;
+        font-size: 30px;
+        font-weight: 600;
     }
   }
